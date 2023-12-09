@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ball{
+            height: 4rem;
+            width: 4rem;
+            background-color: black;
+            background: linear-gradient(to right,rgb(35, 35, 167),rgb(165, 36, 36),rgb(175, 125, 31),rgb(160, 30, 52),rgb(179, 179, 48));
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            top: 71vh;
+            left: 50%;
+            animation: bounce 1s infinite alternate cubic-bezier(0.5,0.05,1,0.5);
+            box-shadow:5px 5px 8px rgb(70, 69, 69),15px 15px 8px rgb(248, 248, 248);
+        }
+       
+        @keyframes bounce {
+            from{
+                transform: translate3d(0,0,0);
+            }
+            to{
+                transform: translate3d(0,-100vh,0);
+            } 
+        } 
+            .line{
+            position: relative;
+            top: 70vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <hr class="line">
+</body>
+</html>
+
+   
